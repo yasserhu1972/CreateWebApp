@@ -19,7 +19,7 @@ steps:
     resourceGroupName: 'AzureRmPipeline-rg'
     location: 'Canada Central'
     templateLocation: 'Linked artifact'
-    csmFile: 'CreateWebApp/azuredeploy.json'
+    csmFile: 'https://raw.githubusercontent.com/yasserhu1972/CreateWebApp/main/azuredeploy.json'
     overrideParameters: '-projectName cgstecharmdeploy -linkedTemplateUri https://raw.githubusercontent.com/yasserhu1972/CreateWebApp/main/linkedStorageAccount.json'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
